@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+.container{
+    display:flex;
+    margin: 0;
+    height: 100vh;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    font-family: 'Montserrat', sans-serif;
+}
+.form-container{
+    width: 30em;
+}
+.left img{
+    max-height: 100vh;
+}
+.right{
+
+    padding:0  7em;
+    text-align: center;
+}
+#title{
+    margin:2em 0 2em 0;
+    font-family: Pacifico;
+    color: #686868;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right h3{
+    color: #a9a9a9;
+    font-size:1.4em;
+    font-weight: lighter;
+}
+form{
+    position: relative;
+    margin-top: 50px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .text{
+    position: relative;
+    border-bottom: 2px solid #cfcfcf;
+    margin: 30px 0 ;
+}
+.text input{
+    width: 100%;
+    padding: 0 5px;
+    height:40px ;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s ;
+}
+.text span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width:0%;
+    height:2px;
+    background: #a4c4b5;
+    transition: 0.5s;
+}
+.text input:focus ~ label,
+.text input:valid ~ label{
+    top: -5px;
+    color:#a4c4b5;
+}
+.text input:focus ~ span::before,
+.text input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    cursor: pointer;
+    position: relative;
+    color: #a4c4b5;
+    font-size: 15px;
+    text-align: right;
+}
+.button-login{
+    margin-top: 40px;
+}
+.button-login button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 13em;
+    height: 3em;
+    color: white;
+    background: #686868;
+    border-radius:50px;
+    font-size: 15px;
+}
+hr{
+    width: 5em;
+    color: #adadad;
+
+}
+.or{
+    color: #adadad;
+    margin-top: 3em;
+    display: flex;
+}
+.google{
+    margin-top: 3em;
+}
+.google img{
+    width: 20px;
+}
+.google p{
+    margin-top: 3em;
+}
+.google a{
+    color: #a4c4b5;
+}
+@media only screen and (max-width: 700px) {
+    .left{
+        display: none;
+    }
+}
