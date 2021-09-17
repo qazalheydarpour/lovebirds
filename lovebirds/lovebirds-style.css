@@ -2,6 +2,9 @@
     font-family: Pacifico;
     src: url(fonts/Pacifico-Regular.ttf);
 }
+body{
+    overflow: hidden;
+}
 .container{
     display:flex;
     margin: 0;
@@ -15,11 +18,14 @@
 .left img{
     max-height: 100vh;
     margin: 0;
+    position: absolute;
+    left: 0;
+    top:0;
 }
 .right{
-
-    padding:0  7em;
     text-align: center;
+    position: absolute;
+    left: 40%;
 }
 #title{
     margin:2em 0 2em 0;
